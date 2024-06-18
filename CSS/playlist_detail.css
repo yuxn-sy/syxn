@@ -1,0 +1,152 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/背景.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+nav {
+  text-align: center;
+  margin-top: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+div div img {
+  width: 200PX;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  margin: 20px auto;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  text-align: center;
+}
+
+section img {
+  border-radius: 12px;
+  width: 800px;
+  height: auto;
+  margin: 0 auto 40px;
+  display: block;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+section h2,
+section p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.qi-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.qi-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.song-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: calc(30% - 20px);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.song-card p {
+  color:#333366;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.favorites-list {
+  display: block; /* 或者使用 flex，取决于你的布局需求 */  
+  margin-left: auto;  
+  margin-right: auto;  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.favorites-item {
+   font-weight:800;
+  font-size: 20px; /* 这里设置字体大小 */
+  background: linear-gradient(to right, #80e0f1, #67e7c7);
+  color: #9479b8;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 200px;
+}
+
+.favorites-item:hover {
+  background: linear-gradient(to right, #e7f33d, #faad06);
+  color: #f85d2e;
+}
